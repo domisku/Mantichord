@@ -1,61 +1,30 @@
+# Mantichord (music tool to generate chord progressions)
 
-# sampler [WIP]
-Samplers, [Tone.js mono synths](http://tonejs.github.io/Presets/) and sounds for Scribbletune Live!
+Mantichord is a tool for musicians to generate and playback chord progressions.
 
-#### How to use
+Project was built with Scribbletune, Tone.js, Javascript, CSS and HTML.
 
-Clone this repo in your public folder of your server. As of now it exposes a couple of global methods that you can use. 
+I made this when I was starting out with coding, Mantichord was my first bigger project.
+I suppose the code could be way cleaner, the algorithm for chord generation is rather plain and generates only diatonic chords.
+Nevertheless, I think the resulting progressions sound pretty great if rather simplistic.
+After all, there is much more to music than just the chords.
 
-### Sampler
-These are sampled wav files mapped to notes and are free to use in your projects. You can use these in your `clip` method with the global `getSampler` method
+## Features
 
-```
-scribble.clip({
-	notes: 'C4',
-	pattern: 'x',
-	sampler: getSampler('piano') // a second param can be provided for the path for serving the samples
-}).start();
-```
-You can substitute `piano` to any of the following:
-- celestialPad
-- ciriusRez
-- epicTranceLead
-- jarblePerator
-- korgBass
-- piano
-- psyTranceBass
-- superSaw
+1. Generate diatonic chord progressions
+2. Listen to progressions that you generated
+3. Choose one of three sampled instruments (piano and two synthesizers)
+4. Control tempo and volume with sliders
+5. Change key signature
+6. Add pregenerated drum patterns to listen along with the chords
+7. Switch up rhythmic patterns for sampled instruments
+8. Website works on mobile devices
 
-### Tone MonoSynths
+## How to use
 
-For synth presets of Tone.js, I ve put together few of these for you to use by calling the global `getToneMonoSynth` method in your scripts while creating clips with an `instrument`. Make sure to pull the tone-mono-synths.js file in your HTML via a SCRIPT tag.
+Follow these steps to run the project locally:
 
-```
-scribble.clip({
-	notes: 'C2',
-	pattern: '[xx]',
-	instrument: getToneMonoSynth('MonoSynth:BassGuitar') 
-}).start();
-```
-You can substitute the colon separated preset with the following values. The left side of the colon is the name of the Synth to use and the right is the optional Preset you'd like to use
-
-- FMSynth:
-	- ElectricCello,
-	- Kalimba,
-	- ThinSaws
-
-- MonoSynth:
-	- BassGuitar,
-	- BrassCircuit,
-	- Pianoetta,
-	- Pizz
-
-- NoiseSynth:
-	- Gravel,
-	- Train
-
-- Synth:
-	- Lectric,
-	- Marimba,
-	- Steelpan,
-	- SuperSaw
+1. Clone this repository 
+2. Run "npm install" command
+3. Run "node server.js" command from the terminal 
+4. Go to "localhost:3000" in your browser of choice
