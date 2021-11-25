@@ -1,0 +1,243 @@
+body {
+  text-align: center;
+  background-color: rgb(44, 44, 44);
+  color: white;
+  font-family: "Quicksand", sans-serif;
+}
+
+#chordColor {
+  background: rgb(72, 70, 70);
+  font-family: "Benne", serif;
+  padding-top: 1.65rem;
+  border: 0.15rem solid rgb(44, 44, 44);
+  border-radius: 0.5rem;
+}
+
+#new,
+#play-button {
+  background: rgb(117, 47, 183);
+  color: white;
+  border-radius: 0;
+}
+
+#play-button {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-right: 0.09rem;
+}
+
+#new {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#new:hover,
+#play-button:hover {
+  background: rgb(129, 71, 183);
+}
+
+#new:focus,
+#play-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+#BPM::-webkit-slider-thumb,
+#vol::-webkit-slider-thumb {
+  background-color: rgb(172, 47, 183);
+}
+
+#BPM:focus::-webkit-slider-thumb,
+#vol:focus::-webkit-slider-thumb {
+  outline: none;
+  box-shadow: none;
+}
+
+#BPM::-webkit-slider-runnable-track,
+#vol::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  background-color: rgb(72, 70, 70);
+}
+
+#navbar {
+  background-color: rgb(72, 70, 70);
+}
+
+footer {
+  font-size: 14pt;
+}
+
+#key,
+#instrument,
+#pattern,
+#drums {
+  padding: 0.5em 2.5em 0.5em 1em;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-color: rgb(72, 70, 70);
+  color: white;
+  background-image: linear-gradient(45deg, transparent 50%, white 50%),
+    linear-gradient(135deg, white 50%, transparent 50%),
+    linear-gradient(to right, rgb(117, 47, 183), rgb(117, 47, 183));
+  background-position: calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px), 100% 0;
+  background-size: 5px 5px, 5px 5px, 2.5em 2.5em;
+  background-repeat: no-repeat;
+  border: none;
+}
+
+#key:hover,
+#instrument:hover,
+#pattern:hover,
+#drums:hover {
+  padding: 0.5em 2.5em 0.5em 1em;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-color: rgb(72, 70, 70);
+  color: white;
+  background-image: linear-gradient(45deg, transparent 50%, white 50%),
+    linear-gradient(135deg, white 50%, transparent 50%),
+    linear-gradient(to right, rgb(129, 71, 183), rgb(129, 71, 183));
+  background-position: calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px), 100% 0;
+  background-size: 5px 5px, 5px 5px, 2.5em 2.5em;
+  background-repeat: no-repeat;
+  border: none;
+}
+
+#key:focus,
+#instrument:focus,
+#pattern:focus,
+#drums:focus {
+  background-image: linear-gradient(45deg, white 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, white 50%),
+    linear-gradient(to right, rgb(129, 71, 183), rgb(129, 71, 183));
+  background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em, 100% 0;
+  background-size: 5px 5px, 5px 5px, 2.5em 2.5em;
+  background-repeat: no-repeat;
+  outline: none;
+  box-shadow: none;
+}
+
+#rowTwo-first,
+#rowTwo-second,
+#rowTwo-third,
+#rowTwo-fourth {
+  font-size: 1.4rem;
+  color: darkgray;
+}
+
+#rowOne-first,
+#rowOne-second,
+#rowOne-third,
+#rowOne-fourth {
+  font-size: 2.3rem;
+  font-family: "Raleway", sans-serif;
+}
+
+#header-title {
+  font-size: 23pt;
+  margin-left: 2rem;
+}
+
+.nav-link {
+  font-size: 13pt;
+  margin-right: 2rem;
+}
+
+img {
+  filter: invert(1);
+  width: 1.3rem;
+}
+
+#play-button {
+  padding: 0.9rem 1.5rem 1.1rem 1.5rem !important;
+}
+
+@media (max-width: 1500px) {
+  #chordColor {
+    padding: 1rem 0.1rem 0.7rem 0.1rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  img {
+    width: 0.8rem;
+  }
+  #row-margin {
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 540px) {
+  #rowTwo-first,
+  #rowTwo-second,
+  #rowTwo-third,
+  #rowTwo-fourth {
+    margin: 0;
+    font-size: 1rem;
+  }
+  #rowOne-first,
+  #rowOne-second,
+  #rowOne-third,
+  #rowOne-fourth {
+    margin: 0;
+    font-size: 1.4rem;
+  }
+  #contID {
+    padding: 0;
+  }
+  #row-margin {
+    padding: 0 !important;
+  }
+  #new,
+  #play-button {
+    font-size: 85%;
+  }
+}
+
+@media (max-width: 319px) {
+  #new,
+  #play-button {
+    padding: 1rem 0.7rem !important;
+  }
+  img {
+    width: 0.5rem;
+  }
+  #header-title {
+    font-size: 1.6rem;
+  }
+}
+
+#instructions {
+  margin-top: 30vh;
+  text-align: left;
+  letter-spacing: 0.3px;
+}
+
+@media (max-width: 350px) {
+  #rowTwo-first,
+  #rowTwo-second,
+  #rowTwo-third,
+  #rowTwo-fourth {
+    margin: 0;
+    font-size: 0, 8rem;
+  }
+  #rowOne-first,
+  #rowOne-second,
+  #rowOne-third,
+  #rowOne-fourth {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+}
