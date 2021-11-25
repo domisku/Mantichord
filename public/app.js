@@ -185,11 +185,10 @@ async function changeInstrument() {
 
   if (choice === "piano") userSampleChoice = samples.piano;
   else if (choice === "ciriusRez") userSampleChoice = samples.ciriusRez;
-  else if (choice === "jarblePerator")
-    userSampleChoice = samples.jarblePerator;
+  else if (choice === "jarblePerator") userSampleChoice = samples.jarblePerator;
 
   stopPlayback();
-  
+
   await wait();
 }
 
@@ -307,7 +306,7 @@ async function changePattern() {
     makeChord(thirdChord),
     makeChord(fourthChord),
   ];
-  
+
   stopPlayback();
 
   await wait();
@@ -418,7 +417,7 @@ createClips();
 function createClips() {
   const sampler = new Tone.Sampler({
     urls: userSampleChoice,
-    baseUrl: "http://localhost:3000/samples/",
+    baseUrl: "/samples/",
   });
 
   chordClip = scribble
@@ -433,7 +432,7 @@ function createClips() {
   setTimeout(() => {
     kickClip = scribble
       .clip({
-        sample: "http://localhost:3000/samples/drum/Kick-Drum-15.wav", // new property: sample
+        sample: "/samples/drum/Kick-Drum-15.wav", // new property: sample
         pattern: kickRhythmPattern,
         subdiv: kickSubdivPattern,
         volume: 5,
@@ -444,7 +443,7 @@ function createClips() {
   setTimeout(() => {
     snareClip = scribble
       .clip({
-        sample: "http://localhost:3000/samples/drum/snare.wav", // new property: sample
+        sample: "/samples/drum/snare.wav", // new property: sample
         pattern: snareRhythmPattern,
         subdiv: snareSubdivPattern,
         volume: -2,
@@ -455,7 +454,7 @@ function createClips() {
   setTimeout(() => {
     hihatClip = scribble
       .clip({
-        sample: "http://localhost:3000/samples/drum/Hi-Hat-5.wav", // new property: sample
+        sample: "/samples/drum/Hi-Hat-5.wav", // new property: sample
         pattern: hihatRhythmPattern,
         subdiv: hihatSubdivPattern,
         volume: -10,
