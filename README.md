@@ -20,6 +20,10 @@ After all, there is much more to music than just the chords.
 7. Switch up rhythmic patterns for sampled instruments
 8. Website works on mobile devices
 
+## Preview  
+
+Preview deployed project on [Vercel](https://mantichord.vercel.app/)
+
 ## How to use
 
 Follow these steps to run the project locally:
