@@ -1,4 +1,4 @@
-# Mantichord (music tool to generate chord progressions)
+# Mantichord (music tool)
 
 Mantichord is a tool for musicians to generate and playback chord progressions.
 
@@ -22,7 +22,9 @@ After all, there is much more to music than just the chords.
 
 ## Preview  
 
-Preview deployed project on [Vercel](https://mantichord.vercel.app/)
+Preview deployed project on [Vercel](https://mantichord.vercel.app/)  
+
+![Website in three different screen sizes](https://user-images.githubusercontent.com/84922120/144009390-29426bbf-d736-458a-a952-d21fbdb35b10.png)
 
 ## How to use
 
@@ -31,4 +33,6 @@ Follow these steps to run the project locally:
 1. Clone this repository 
 2. Run "npm install" command
 3. Run "node server.js" command from the terminal 
-4. Go to "localhost:3000" in your browser of choice
+4. Go to "localhost:3000" in your browser of choice  
+
+
